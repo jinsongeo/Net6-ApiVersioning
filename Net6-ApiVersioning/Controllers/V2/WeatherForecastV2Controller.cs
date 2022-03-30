@@ -4,7 +4,7 @@ namespace Net6_ApiVersioning.Controllers
 {
     [ApiVersion("2.0")]
     [ApiController]
-    [Route("/v{version:apiVersion}/Weather")]
+    [Route("api/v{version:apiVersion}/Weather")]
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]

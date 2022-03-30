@@ -1,10 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
+using Net6_ApiVersioning.Code;
 
 namespace Net6_ApiVersioning.Controllers.V1
 {
-    [ApiVersion("1.0")]
+    //[ApiVersion("1.0")]
+    [V1]
     [ApiController]
-    [Route("/v{version:apiVersion}/Weather")]
+    [Route("api/v{version:apiVersion}/Weather")]
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
